@@ -1,6 +1,5 @@
-"""
-https://open.kattis.com/problems/twostones
-"""
+"""https://open.kattis.com/problems/twostones"""
+
 N = int(input())
 
 if N % 2 == 1:

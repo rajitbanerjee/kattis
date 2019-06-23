@@ -1,6 +1,5 @@
-"""
-https://open.kattis.com/problems/acm
-"""
+"""https://open.kattis.com/problems/acm"""
+
 import string
 
 def findTime(log):

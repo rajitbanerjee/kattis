@@ -1,6 +1,5 @@
-"""
-https://open.kattis.com/problems/aboveaverage
-"""
+"""https://open.kattis.com/problems/aboveaverage"""
+
 def centAvg(grades) -> str:
     total = 0
     size = len(grades)
