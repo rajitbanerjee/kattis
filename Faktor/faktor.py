@@ -1,8 +1,7 @@
 """https://open.kattis.com/problems/faktor"""
 
 from math import ceil
-nums = list(map(int, input().split()))
-A, I = nums[0], nums[1]
+A, I = list(map(int, input().split()))
 
 scientists = A
 while True:
