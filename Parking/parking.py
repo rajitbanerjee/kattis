@@ -1,14 +1,16 @@
-"""https://open.kattis.com/problems/parking2"""
+"""https://open.kattis.com/problems/parking"""
 
-from math import ceil
+A, B, C = list(map(int, input().split()))
+arr, dep = [], []
+for _ in range(3):
+    data = list(map(int, input().split()))
+    arr.append(data[0])
+    dep.append(data[1])
 
-t = int(input())
-ans = []
-for _ in range(t):
-    _ = input()
-    pos = list(map(int, input().split()))
-    avg = ceil(sum(pos)/len(pos))
-    ans.append((abs(avg - min(pos)) + abs(avg - max(pos))) * 2)
+cost, trucks = 0, 0
+for i in range(min(arr), max(dep) + 1):
+    trucks += arr.count(i) - dep.count(i)
+    if trucks > 0:
+        cost += [A, 2 * B, 3 * C][trucks - 1]
 
-for a in ans:
-    print(a)
+print(cost)
