@@ -1,4 +1,4 @@
-"""https://open.kattis.com/problems/sodasurpler"""
+"""https://open.kattis.com/problems/sodaslurper/submit"""
 
 e, f, c = map(int, input().split())
 empty, sodas = e + f, 0
